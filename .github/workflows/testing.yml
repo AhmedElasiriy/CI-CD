@@ -16,9 +16,3 @@ jobs:
         run: npm install
       - name: Run Tests
         run: npm test
-
-        # to make action depend on another action use the following syntax:
-        # needs: <action-name>
-        # for example:
-        # needs: build
-        # this will make the action depend on the build action
