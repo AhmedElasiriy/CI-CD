@@ -12,11 +12,7 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: "18.x"
-      - name: Install pnpm
-        run: |
-          npm install -g pnpm
-          echo pnpm --version
-          # - name: Install Dependencies
-      #   run: pnpm install
-      # - name: Run Tests
-      #   run: pnpm test
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Tests
+        run: npm test
